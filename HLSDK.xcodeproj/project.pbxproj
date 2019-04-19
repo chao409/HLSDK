@@ -17,8 +17,6 @@
 		4296535D2260811C00F6105B /* libWeiboSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4296534E2260811C00F6105B /* libWeiboSDK.a */; };
 		4296535E2260811C00F6105B /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 429653542260811C00F6105B /* README.txt */; };
 		4296535F2260811C00F6105B /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 429653562260811C00F6105B /* libWeChatSDK.a */; };
-		429653602260811C00F6105B /* HLImages.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 429653582260811C00F6105B /* HLImages.bundle */; };
-		429653612260811C00F6105B /* HLApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 429653592260811C00F6105B /* HLApi.framework */; };
 		429653622260811C00F6105B /* TencentOpenAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4296535B2260811C00F6105B /* TencentOpenAPI.framework */; };
 		42965365226081AF00F6105B /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42965364226081AF00F6105B /* CFNetwork.framework */; };
 		42965367226081BB00F6105B /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 42965366226081BB00F6105B /* libc++.tbd */; };
@@ -57,8 +55,6 @@
 		429653542260811C00F6105B /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		429653552260811C00F6105B /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
 		429653562260811C00F6105B /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
-		429653582260811C00F6105B /* HLImages.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HLImages.bundle; sourceTree = "<group>"; };
-		429653592260811C00F6105B /* HLApi.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HLApi.framework; sourceTree = "<group>"; };
 		4296535B2260811C00F6105B /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TencentOpenAPI.framework; sourceTree = "<group>"; };
 		42965364226081AF00F6105B /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		42965366226081BB00F6105B /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
@@ -100,7 +96,6 @@
 				4296535F2260811C00F6105B /* libWeChatSDK.a in Frameworks */,
 				429653622260811C00F6105B /* TencentOpenAPI.framework in Frameworks */,
 				4296535D2260811C00F6105B /* libWeiboSDK.a in Frameworks */,
-				429653612260811C00F6105B /* HLApi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,8 +173,6 @@
 		429653572260811C00F6105B /* HuanLiSDK */ = {
 			isa = PBXGroup;
 			children = (
-				429653582260811C00F6105B /* HLImages.bundle */,
-				429653592260811C00F6105B /* HLApi.framework */,
 			);
 			path = HuanLiSDK;
 			sourceTree = "<group>";
@@ -274,7 +267,6 @@
 				42965342226080EE00F6105B /* LaunchScreen.storyboard in Resources */,
 				4296533F226080EE00F6105B /* Assets.xcassets in Resources */,
 				4296533D226080EE00F6105B /* Main.storyboard in Resources */,
-				429653602260811C00F6105B /* HLImages.bundle in Resources */,
 				4296535C2260811C00F6105B /* WeiboSDK.bundle in Resources */,
 				4296535E2260811C00F6105B /* README.txt in Resources */,
 			);

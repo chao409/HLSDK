@@ -16,22 +16,11 @@ Pod::Spec.new do |spec|
 
   spec.source       = { :git => "https://github.com/chao409/HLSDK.git", :tag => "#{spec.version}" }
 
-  spec.source_files  = "HLSDK/sdks/**/*.framework/Headers/*.{h}", "HLSDK/ViewController.{h,m}"
-
-  spec.public_header_files = "HLSDK/sdks/**/*.framework/Headers/*.h"
+  spec.source_files  = "**/*.{h,m}"
 
   spec.frameworks = "CFNetwork","Photos","CoreGraphics","Foundation","AVFoundation","CoreText","UIKit","Secrity","SystemConfiguration","ImageIO","QuartzCore"
   spec.libraries =  "c","sqlite3","z","c++"
-  spec.vendored_frameworks = "HLSDK/sdks/**/*.framework"
-spec.vendored_libraries = "HLSDK/sdks/**/*.a"
+  spec.vendored_frameworks = "**/*.framework"
+  spec.vendored_libraries = "**/*.a"
 
-  spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-
-  spec.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '"
-$(SRCROOT)/HLSDK/sdks/HuanLiSDK"' }
-  spec.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '"
-$(SRCROOT)/HLSDK/sdks/QQ"' }
-
-  spec.xcconfig  = { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/HLSDK/sdks/libWeiboSDK"' }
-  spec.xcconfig  = { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/HLSDK/sdks/WeChatSDK1.8.4_NoPay"' }
 end

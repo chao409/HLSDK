@@ -7,7 +7,10 @@
 //
 
 #import "ViewController.h"
-#import <HLApi/HLApi.h>
+#import "WeiboSDK.h"
+#import "WXApi.h"
+#import <TencentOpenAPI/TencentOAuth.h>
+#import <TencentOpenAPI/QQApiInterface.h>
 
 @interface ViewController ()
 
@@ -17,10 +20,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    HLView *view = [HLView viewWithViewType:HLViewTypeTextLink positionCode:@""];
-    [self.view addSubview:view];
-    view.frame = CGRectMake(0, 0, 100, 100);
-    
+        TencentOAuth *tencetnOAuth = [[TencentOAuth alloc] initWithAppId:@"" andDelegate:nil];
+    NSLog(@"%@",tencetnOAuth);
+        [WXApi registerApp:@""];
+        [WeiboSDK registerApp:@""];
 }
 
 
